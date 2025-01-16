@@ -81,7 +81,16 @@
     "services_item71":"供應鏈管理",
     "services_item81":"客製化採購",
     "aboutus_contentpart":"瀛灃行是一所綜合貿易公司，主要業務是全球貿易和進出口，包括零售及分銷、批發、代理、過境電商。而產品類型包括快速消費品、保健藥品⋯⋯",
-    "readmore":"閱讀更多"
+    "readmore":"閱讀更多",
+    "leave_msg":"更多查詢",
+    "leave_msg_describe":"請注意週末和公共假期可能會延遲回覆時間。我們將儘快與您聯繫。（*必填欄位）",
+    "leave_msg_data1":"*您的名字 :",
+    "leave_msg_data2":"*您的姓氏 :",
+    "leave_msg_data3":"*電郵地址 :",
+    "leave_msg_data4":"*電話號碼 :",
+    "leave_msg_data5":"*您的訊息",
+    "leave_msg_data6":"發送訊息<",
+    "leave_msg_data7":"謝謝您。"
 }
 
 

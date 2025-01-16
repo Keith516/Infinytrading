@@ -93,5 +93,15 @@
     "services_item71":"Supply Chain Management",
     "services_item81":"Customized Procurement",
     "aboutus_contentpart":"Our services encompass retail and distribution, wholesale, agency, and cross-border e-commerce. We offer a wide range of products, including fast-moving consumer goods, health supplem.....",
-    "readmore":"Read More"
+    "readmore":"Read More",
+    "leave_msg":"Leave us a message",
+    "leave_msg_describe":"Please be advised that weekends and public holidays might delay response time. We will get back to you as soon as possible. (*Mandatory Fields)",
+    "leave_msg_data1":"*Your First Name:",
+    "leave_msg_data2":"*Your Last Name:",
+    "leave_msg_data3":"*Email:",
+    "leave_msg_data4":"*Phone no.:",
+    "leave_msg_data5":"Your message:",
+    "leave_msg_data6":"Send Message<",
+    "leave_msg_data7":"Thank you."
+
 }
