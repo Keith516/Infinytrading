@@ -211,19 +211,30 @@ window.addEventListener('DOMContentLoaded', async () => {
   const userPreferredLanguage = sessionStorage.getItem('language') || 'cn';
   
   const langData = await fetchLanguageData(userPreferredLanguage);
+  
   updateContent(langData);
   toggleArabicStylesheet(userPreferredLanguage); 
   const searchInput = document.getElementById('search-input');
   if (searchInput) {
     searchInput.placeholder = userPreferredLanguage === 'cn' ? '搜索...' : 'Search...';
   }
-
+  var logo = document.getElementById('logo-infinytrading');
+  var logo_footer = document.getElementById('logo-footer');
+ 
+  if(userPreferredLanguage=='cn'){
+    logo.src = 'images/infiny_trading-logo (1).png';
+    logo_footer.src ='images/infiny_trading-logo (1).png';
+  }else{
+  
+  logo.src = 'images/infiny_trading-logo_en.png';
+  logo_footer.src = 'images/infiny_trading-logo_en.png';
+  }
   // Redirect to the correct page if necessary
-  // const currentPath = sessionStorage.getItem('currentPage');
-  // if (currentPath && window.location.href !== currentPath) {
+  const currentPath = sessionStorage.getItem('currentPage');
+  if (currentPath && window.location.href !== currentPath) {
     
-  //   window.location.href = currentPath;
-  // }
+     window.location.href = currentPath || "http://127.0.0.1:5501/Infinytrading/index.html";
+  }
 });
 
 // Update session storage when navigation links are clicked
@@ -234,7 +245,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
     // Remove leading './' from href if present
     const sanitizedHref = href.replace(/^\.\//, '');
-    const fullPath = "http://127.0.0.1:8080/" + sanitizedHref;
+    const fullPath = "http://127.0.0.1:5501/Infinytrading/" + sanitizedHref;
     sessionStorage.setItem('currentPage', fullPath);
   });
 });
@@ -245,7 +256,7 @@ document.querySelectorAll('.mobile-nav-item').forEach(link => {
 
     // Remove leading './' from href if present
     const sanitizedHref = href.replace(/^\.\//, '');
-    const fullPath = "http://127.0.0.1:8080/" + sanitizedHref;
+    const fullPath = "http://127.0.0.1:5501/Infinytrading/" + sanitizedHref;
     sessionStorage.setItem('currentPage', fullPath);
   });
 });
@@ -270,5 +281,4 @@ function hideiframeelement() {
   var element = iframe.contentWindow.document.getElementById('top-bar');
   console.log('element', element);
 }
-
 

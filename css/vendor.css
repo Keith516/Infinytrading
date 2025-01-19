@@ -825,3 +825,6 @@ body.chocolat-open>.chocolat-image-wrapper {
       min-height: 500px !important;
     }
 
+    #logo_footer {
+      padding-top: 20vw;
+  }
