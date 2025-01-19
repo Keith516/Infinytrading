@@ -114,6 +114,12 @@
     new DateTimePickerComponent.DatePicker('select-arrival-date');
     new DateTimePickerComponent.DatePicker('select-departure-date');
   }
+  function hideiframeelement() {
+    var iframe = document.getElementById("myiframe");  
+    console.log('iframe', iframe);
+    var element = iframe.contentWindow.document
+    console.log('element', element);
+  }
 
   // Document Ready
   $(document).ready(function () {
@@ -127,7 +133,10 @@
     initAOS();
     initDateTimePicker();
   });
-
+  $('iframe').load(function() { 
+    console.log('iframe loaded');
+    hideiframeelement();
+  });
 })(jQuery);
 
 // Update Content Based on Language Data
@@ -199,23 +208,22 @@ window.addEventListener('DOMContentLoaded', async () => {
   const currentTime = Date.now();
   const oneDay = 24 * 60 * 60 * 1000;
 
-  const userPreferredLanguage = sessionStorage.getItem('language') || 'en';
+  const userPreferredLanguage = sessionStorage.getItem('language') || 'cn';
   
   const langData = await fetchLanguageData(userPreferredLanguage);
   updateContent(langData);
-  toggleArabicStylesheet(userPreferredLanguage);
-
+  toggleArabicStylesheet(userPreferredLanguage); 
   const searchInput = document.getElementById('search-input');
   if (searchInput) {
     searchInput.placeholder = userPreferredLanguage === 'cn' ? '搜索...' : 'Search...';
   }
 
   // Redirect to the correct page if necessary
-  const currentPath = sessionStorage.getItem('currentPage');
-  if (currentPath && window.location.href !== currentPath) {
+  // const currentPath = sessionStorage.getItem('currentPage');
+  // if (currentPath && window.location.href !== currentPath) {
     
-    window.location.href = currentPath;
-  }
+  //   window.location.href = currentPath;
+  // }
 });
 
 // Update session storage when navigation links are clicked
@@ -226,7 +234,41 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
     // Remove leading './' from href if present
     const sanitizedHref = href.replace(/^\.\//, '');
-    const fullPath = "http://127.0.0.1:5500/mellow-1.0.0/" + sanitizedHref;
+    const fullPath = "http://127.0.0.1:8080/" + sanitizedHref;
     sessionStorage.setItem('currentPage', fullPath);
   });
 });
+document.querySelectorAll('.mobile-nav-item').forEach(link => {
+  link.addEventListener('click', function () {
+    let href = this.getAttribute('href');
+    
+
+    // Remove leading './' from href if present
+    const sanitizedHref = href.replace(/^\.\//, '');
+    const fullPath = "http://127.0.0.1:8080/" + sanitizedHref;
+    sessionStorage.setItem('currentPage', fullPath);
+  });
+});
+
+function mobileClickNav() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+    x.style.position = "fixed";
+    x.style.top = "5%";
+    x.style.width = "100%";
+    x.style.zIndex = "1000";
+    x.style.backgroundColor = "rgb(203,27,69)";
+  }
+}
+
+function hideiframeelement() {
+  var iframe = document.getElementById("myiframe");  
+  console.log('iframe', iframe);
+  var element = iframe.contentWindow.document.getElementById('top-bar');
+  console.log('element', element);
+}
+
+
