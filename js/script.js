@@ -224,10 +224,15 @@ window.addEventListener('DOMContentLoaded', async () => {
   if(userPreferredLanguage=='cn'){
     logo.src = 'images/infiny_trading-logo (1).png';
     logo_footer.src ='images/infiny_trading-logo (1).png';
+    // Remove the class if it exists 
+    logo.classList.remove('double-size'); 
+    logo_footer.classList.remove('double-size');
   }else{
   
   logo.src = 'images/infiny_trading-logo_en.png';
   logo_footer.src = 'images/infiny_trading-logo_en.png';
+  logo.classList.add('double-size'); 
+  logo_footer.classList.add('double-size'); 
   }
   // Redirect to the correct page if necessary
   const currentPath = sessionStorage.getItem('currentPage');
@@ -245,7 +250,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
     // Remove leading './' from href if present
     const sanitizedHref = href.replace(/^\.\//, '');
-    const fullPath = "http://127.0.0.1:5501/Infinytrading/" + sanitizedHref;
+    const fullPath = "http://127.0.0.1:5500/" + sanitizedHref;
     sessionStorage.setItem('currentPage', fullPath);
   });
 });
@@ -256,7 +261,7 @@ document.querySelectorAll('.mobile-nav-item').forEach(link => {
 
     // Remove leading './' from href if present
     const sanitizedHref = href.replace(/^\.\//, '');
-    const fullPath = "http://127.0.0.1:5501/Infinytrading/" + sanitizedHref;
+    const fullPath = "http://127.0.0.1:5500/" + sanitizedHref;
     sessionStorage.setItem('currentPage', fullPath);
   });
 });

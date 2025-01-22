@@ -199,34 +199,34 @@
       </div>
 
     </div>
-    <nav id="primary-header" style="background-color: rgb(203,27,69); position: relative;">
+    <nav id="primary-header" style="background-color: #eae2e2ff; position: relative;">
       <div class="d-flex justify-content-between align-items-center">
-        <a href="index.html" style="display: flex; justify-content: center; align-items: center;">
+        <a href="./index.html" class="nav-link" style="display: flex; justify-content: center; align-items: center;">
           <img id="logo-infinytrading" class="logo" style="margin: 1vw;">
         </a>
         <ul class="social-links d-flex flex-wrap list-unstyled m-0 p-4 ">
           <div class="first-row">
-            <li><a href="index.html" onclick="changeLanguage('cn')" style="margin: 3px; margin-right: 5px; padding-right: 5px; color:#ECB27B;">繁</a></li>
-            <li width="16" height="16"><a href="index.html" onclick="changeLanguage('en')" style="margin: 3px;color:#ECB27B;">Eng</a></li>
+            <li><a href="index.html" onclick="changeLanguage('cn')" style="margin: 3px; margin-right: 5px; padding-right: 5px; color:#cb1b45ff;">繁</a></li>
+            <li width="16" height="16"><a href="index.html" onclick="changeLanguage('en')" style="margin: 3px;color:#cb1b45ff;">Eng</a></li>
           </div>
           <div class="second-row">
           <li class="social">
             <a href="https://www.facebook.com/infinytrading/">
-              <svg class="social" width="16" height="16">
+              <svg class="social" width="16" height="16" style="color: #cb1b45ff;">
                 <use xlink:href="#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social">
             <a href="https://www.instagram.com/infinytrading">
-              <svg class="social" width="16" height="16">
+              <svg class="social" width="16" height="16" style="color: #cb1b45ff;"">
                 <use xlink:href="#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social">
             <a href="mailto:trading@infiny.group">
-              <svg class="social" width="16" height="16">
+              <svg class="social" width="16" height="16"style="color: #cb1b45ff;"">
                 <use xlink:href="#email"></use>
               </svg>
             </a>
@@ -235,7 +235,7 @@
         </ul>
       </div>
     </nav>
-    <nav class="desktop-nav" style="background-color: #000000f2; padding: 1rem;">
+    <nav class="desktop-nav" style="background-color: #cb1b45ff; padding: 1rem;">
       <ul class="nav-list" style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0;">
         <li class="nav-item" style="margin: 0 1rem;">
           <a href="./index.html" class="nav-link" style="color: #ffffff; text-decoration: none; font-size: 1.2rem; font-family: monospace; font-weight: 1000;" data-i18n="home"></a>
@@ -261,7 +261,7 @@
   </header>
 
   <section class="about-section">
-    <h2 data-i18n="core"></h2>
+    <h2 data-i18n="core" style="font-size: 49px;"></h2>
     <section>
       <h3 data-i18n="core_subtitle1"></h3>
       <p data-i18n="core_content1"></p>
@@ -294,7 +294,7 @@
     <footer class="row">
       <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
         
-        <img id="logo-footer" alt="logo-footer" class="img-fluid">
+        <img id="logo-footer"class="logo-footer" style="margin: 1vw; " >
       </div>
       <div class="col-md-6 col-lg-3 offset-lg-1 mb-4 mb-lg-0">
         <!-- Empty column for spacing -->
@@ -302,12 +302,7 @@
       <div class="col-md-6 col-lg-3 offset-lg-1 mb-4 mb-lg-0" style="color: #ffffff; padding-top:50px;">
         <h4 class="display-6 fw-normal" style="color: #ffffff;font-family: monospace; font-weight: 1000;" data-i18n="contact"></h4>
         <ul class="nav flex-column">
-          <li class="location text-capitalize d-flex align-items-center" style="font-family: monospace; font-weight: 1000;">
-            <svg class="color me-1" style="min-width: 20px; min-height: 20px;" width="20" height="20">
-              <use xlink:href="#location"></use>
-            </svg>
-            <p data-i18n="contact_info3" style="margin: 0;"></p>
-          </li>
+          
           <li class="phone text-capitalize d-flex align-items-center mt-2" style="font-family: monospace; font-weight: 1000;">
             <svg class="color me-1" style="min-width: 20px; min-height: 20px;" width="20" height="20">
               <use xlink:href="#phone"></use>
@@ -319,6 +314,12 @@
               <use xlink:href="#email"></use>
             </svg>
             <p style="margin: 0; "></p>trading@infiny.group</p>
+          </li>
+          <li class="location text-capitalize d-flex" style="font-family: monospace; font-weight: 1000;">
+            <svg class="color me-1" style="min-width: 20px; min-height: 20px;" width="20" height="20">
+              <use xlink:href="#location"></use>
+            </svg>
+            <p data-i18n="contact_info3" style="margin: 0;"></p>
           </li>
         </ul>
       </div>

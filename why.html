@@ -199,34 +199,34 @@
       </div>
 
     </div>
-    <nav id="primary-header" style="background-color: rgb(203,27,69); position: relative;">
+    <nav id="primary-header" style="background-color: #eae2e2ff; position: relative;">
       <div class="d-flex justify-content-between align-items-center">
-        <a href="index.html" style="display: flex; justify-content: center; align-items: center;">
+        <a href="./index.html" class="nav-link" style="display: flex; justify-content: center; align-items: center;">
           <img id="logo-infinytrading" class="logo" style="margin: 1vw;">
         </a>
         <ul class="social-links d-flex flex-wrap list-unstyled m-0 p-4 ">
           <div class="first-row">
-            <li><a href="index.html" onclick="changeLanguage('cn')" style="margin: 3px; margin-right: 5px; padding-right: 5px; color:#ECB27B;">繁</a></li>
-            <li width="16" height="16"><a href="index.html" onclick="changeLanguage('en')" style="margin: 3px;color:#ECB27B;">Eng</a></li>
+            <li><a href="index.html" onclick="changeLanguage('cn')" style="margin: 3px; margin-right: 5px; padding-right: 5px; color:#cb1b45ff;">繁</a></li>
+            <li width="16" height="16"><a href="index.html" onclick="changeLanguage('en')" style="margin: 3px;color:#cb1b45ff;">Eng</a></li>
           </div>
           <div class="second-row">
           <li class="social">
             <a href="https://www.facebook.com/infinytrading/">
-              <svg class="social" width="16" height="16">
+              <svg class="social" width="16" height="16" style="color: #cb1b45ff;">
                 <use xlink:href="#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social">
             <a href="https://www.instagram.com/infinytrading">
-              <svg class="social" width="16" height="16">
+              <svg class="social" width="16" height="16" style="color: #cb1b45ff;"">
                 <use xlink:href="#instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social">
             <a href="mailto:trading@infiny.group">
-              <svg class="social" width="16" height="16">
+              <svg class="social" width="16" height="16"style="color: #cb1b45ff;"">
                 <use xlink:href="#email"></use>
               </svg>
             </a>
@@ -235,7 +235,7 @@
         </ul>
       </div>
     </nav>
-    <nav class="desktop-nav" style="background-color: #000000f2; padding: 1rem;">
+    <nav class="desktop-nav" style="background-color: #cb1b45ff; padding: 1rem;">
       <ul class="nav-list" style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0;">
         <li class="nav-item" style="margin: 0 1rem;">
           <a href="./index.html" class="nav-link" style="color: #ffffff; text-decoration: none; font-size: 1.2rem; font-family: monospace; font-weight: 1000;" data-i18n="home"></a>
@@ -261,14 +261,27 @@
   </header>
 
   <section class="about-section">
-    <h2 data-i18n="why" style="margin-bottom: 30px;"></h2>
+    <h2 data-i18n="why" style="font-size:30px;margin-bottom: 30px;"></h2>
     
-      <ul>
-        <li><p data-i18n="reason1"></p></li>
-        <li><p data-i18n="reason2"></p></li>
-        <li><p data-i18n="reason3"></p></li>
-        <li><p data-i18n="reason4"></p></li>
-      </ul>
+    <ul style="list-style-type: none; padding: 0; margin: 0;">
+      <li style="margin-bottom: 10px;">
+          <p data-i18n="reason1_split1" style="font-size: 18px; color: #333; text-decoration: underline; font-weight:900;"></p>
+          <p data-i18n="reason1_split2" style="font-size: 13px; color: #333; "></p>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <p data-i18n="reason2_split1" style="font-size: 18px; color: #333; text-decoration: underline; font-weight:900;"></p>
+          <p data-i18n="reason2_split2" style="font-size: 13px; color: #333; "></p>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <p data-i18n="reason3_split1" style="font-size: 18px; color: #333; text-decoration: underline; font-weight:900;"></p>
+          <p data-i18n="reason3_split2" style="font-size: 13px; color: #333; "></p>
+      </li>
+      <li style="margin-bottom: 10px;">
+        <p data-i18n="reason4_split1" style="font-size: 18px; color: #333; text-decoration: underline; font-weight:900;"></p>
+          <p data-i18n="reason4_split2" style="font-size: 13px; color: #333; "></p>
+      </li>
+      
+  </ul>
       <div class="row" style="padding-left: 400px;">
         <div class="swiper gallery-swiper 0">
           <div class="swiper-wrapper">
