@@ -109,17 +109,8 @@
   }
 
   // Initialize DateTimePicker
-  function initDateTimePicker() {
-    
-    new DateTimePickerComponent.DatePicker('select-arrival-date');
-    new DateTimePickerComponent.DatePicker('select-departure-date');
-  }
-  function hideiframeelement() {
-    var iframe = document.getElementById("myiframe");  
-    console.log('iframe', iframe);
-    var element = iframe.contentWindow.document
-    console.log('element', element);
-  }
+  
+  
 
   // Document Ready
   $(document).ready(function () {
@@ -131,27 +122,23 @@
     initVideoModal();
     initSwiper();
     initAOS();
-    initDateTimePicker();
+  
   });
-  $('iframe').load(function() { 
-    console.log('iframe loaded');
-    hideiframeelement();
-  });
+  
 })(jQuery);
 
 // Update Content Based on Language Data
 function updateContent(langData) {
-  
-  document.querySelectorAll('[data-i18n]').forEach(element => {
-    const key = element.getAttribute('data-i18n');
-    element.innerHTML = langData[key];
+  document.querySelectorAll("[data-i18n]").forEach(element => {
+    const key = element.getAttribute("data-i18n");
+    if (langData[key]) {
+      element.innerHTML = langData[key];
+    } else {
+      console.warn(`Missing translation for key: ${key}`);
+    }
   });
-
-  const searchInput = document.getElementById('search-input');
-  if (searchInput) {
-    searchInput.placeholder = langData['search-placeholder'];
-  }
 }
+
 
 // Set Language Preference
 function setLanguagePreference(lang) {
@@ -196,7 +183,7 @@ function toggleArabicStylesheet(lang) {
     const newLink = document.createElement('link');
     newLink.id = 'styles-link';
     newLink.rel = 'stylesheet';
-    newLink.href = './assets/css/style-ar.css';
+    //newLink.href = './assets/css/style-ar.css';
     head.appendChild(newLink);
   }
 }
@@ -261,7 +248,7 @@ document.querySelectorAll('.mobile-nav-item').forEach(link => {
 
     // Remove leading './' from href if present
     const sanitizedHref = href.replace(/^\.\//, '');
-    const fullPath = "http://uat.infinytrading.com/" + sanitizedHref;
+    const fullPath = "https://uat.infinytrading.com/" + sanitizedHref;
     sessionStorage.setItem('currentPage', fullPath);
   });
 });
@@ -281,9 +268,20 @@ function mobileClickNav() {
 }
 
 function hideiframeelement() {
-  var iframe = document.getElementById("myiframe");  
-  console.log('iframe', iframe);
-  var element = iframe.contentWindow.document.getElementById('top-bar');
-  console.log('element', element);
+  var iframe = document.getElementById("myiframe");
+  if (!iframe) {
+      console.error("Iframe not found!");
+      return;
+  }
+  var element = iframe.contentWindow?.document?.getElementById('top-bar');
+  if (!element) {
+      console.error("Element inside iframe not found!");
+  }
 }
+
+document.getElementById("myiframe").addEventListener("load", function () {
+  hideiframeelement();
+});
+
+
 

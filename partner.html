@@ -276,13 +276,7 @@
       
       <p data-i18n="partner_details" style="text-align:center" >Our services encompass retail and distribution, wholesale, agency, and cross-border e-commerce. We offer a wide range of products, including fast-moving consumer goods, health supplements, toys (such as figurines and blind boxes), vending machines and more. We are committed to providing our clients with high-quality products and professional services, aiming to establish long-term and stable partnerships.</p>
       <!-- Add the video iframe below the aboutus_content -->
-      <div class="photo-container1" style="
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  margin-top: 30px;
-">
+      <div class="photo-container1">
   <img class="partner-logo" src="./PartnersLogo/HKGCC logo.jpg" alt="HKGCC">
   <img class="partner-logo" src="./PartnersLogo/GS1 logo.png" alt="GS1">
   <img class="partner-logo" src="./PartnersLogo/Sun Life.jpg" alt="Sun Life">
@@ -300,13 +294,37 @@
 </div>
 
 <style>
-  .partner-logo {
-    width: 30%;
-    height: auto;
-    display: block;
-    margin: 0;
-    padding: 0;
-  }
+  .photo-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Default gap for all images */
+    justify-content: center;
+}
+
+.partner-logo {
+    max-width: 200px; /* Ensures images don't get too big */
+    height: auto; /* Keeps natural aspect ratio */
+    object-fit: contain; /* Prevents distortion */
+}
+
+/* Target last two images to have a larger gap */
+.partner-logo:nth-last-child(2),
+.partner-logo:nth-last-child(1) {
+    margin-right: 40px; /* Increase gap for last two */
+}
+
+/* Ensure consistency in mobile view */
+@media (max-width: 768px) {
+    .photo-container1 {
+        gap: 20px; /* Reduce gap for small screens */
+    }
+    .partner-logo:nth-last-child(2),
+    .partner-logo:nth-last-child(1) {
+        margin-right: 0px; /* Remove extra spacing in mobile */
+    }
+}
+
+  
 </style>
 
 
@@ -343,7 +361,7 @@
             </svg>
             <p style="margin: 0; "></p>trading@infiny.group</p>
           </li>
-          <li class="location text-capitalize d-flex" style="font-family: monospace; font-weight: 1000;">
+          <li class="location text-capitalize d-flex" style="font-family: monospace; font-weight: 1000; margin-top:4%">
             <svg class="color me-1" style="min-width: 20px; min-height: 20px;" width="20" height="20">
               <use xlink:href="#location"></use>
             </svg>
@@ -353,6 +371,7 @@
       </div>
     </footer>
   </div>
+   
    
   <footer class="container-fluid padding-side mb-2" data-aos="fade-up" style="margin-top:10px;">
     <div class="row justify-content-between align-items-center">
