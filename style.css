@@ -105,7 +105,7 @@ html {
 }
 
 body {
-  font-family: var(--body-font);
+  font-family: monospace;
   font-size: 16px;
   font-weight: 400;
   line-height: 164%;
@@ -264,7 +264,7 @@ h4,
 h5,
 h6 {
   color: var(--primary-color);
-  font-family: var(--heading-font);
+  font-family: monospace;
   text-transform: capitalize;
   font-weight: 400;
 }
@@ -674,7 +674,7 @@ a.nav-link:hover {
 div.datetime-container,
 div.datetime-container * {
   box-sizing: border-box;
-  font-family: var(--body-font);
+  font-family: monospace;
 }
 
 div.datetime-container button.date,
@@ -902,7 +902,7 @@ iconify-icon.quote {
 }
 
 .accordion-button {
-  font-family: var(--heading-font);
+  font-family: monospace;
   font-weight: var(--heading-font-weight);
   color: var(--heading-color);
   line-height: var(--heading-line-height);

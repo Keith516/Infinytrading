@@ -1,6 +1,8 @@
 {
     "about": "關於我們",
     "services": "服務範疇",
+    "partner":"合作夥伴",
+    "partner_details":"我們的合作夥伴包括世界各地的公司。我們鼓勵您考慮加入我們，與瀛灃行一同攜手拓展業務。",
     "blog": "博客",
     "content": "內容",
     "room": "房間",
@@ -90,8 +92,6 @@
     "leave_msg_data4":"*電話號碼 :",
     "leave_msg_data5":"*您的訊息",
     "leave_msg_data6":"發送訊息<",
-    "leave_msg_data7":"謝謝您。",
-    "partner":"合作夥伴 ",
-    "partner_details":"我們的合作夥伴包括世界各地的公司。我們鼓勵您考慮加入我們，與瀛灃行一同攜手拓展業務。"}
-
+    "leave_msg_data7":"謝謝您。"
+}
 
