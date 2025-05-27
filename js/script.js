@@ -105,7 +105,8 @@
   // Initialize AOS
   function initAOS() {
     
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 2000, once: true });
+
   }
 
   // Initialize DateTimePicker
@@ -225,7 +226,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   const currentPath = sessionStorage.getItem('currentPage');
   if (currentPath && window.location.href !== currentPath) {
     
-     window.location.href = currentPath || "https://uat.infinytrading.com/index.html";
+     window.location.href = currentPath || "http://127.0.0.1:5500/index.html";
   }
 });
 
@@ -237,7 +238,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
     // Remove leading './' from href if present
     const sanitizedHref = href.replace(/^\.\//, '');
-    const fullPath = "https://uat.infinytrading.com/" + sanitizedHref;
+    const fullPath = "http://127.0.0.1:5500/" + sanitizedHref;
     sessionStorage.setItem('currentPage', fullPath);
   });
 });
@@ -248,7 +249,7 @@ document.querySelectorAll('.mobile-nav-item').forEach(link => {
 
     // Remove leading './' from href if present
     const sanitizedHref = href.replace(/^\.\//, '');
-    const fullPath = "https://uat.infinytrading.com/" + sanitizedHref;
+    const fullPath = "http://127.0.0.1:5500/" + sanitizedHref;
     sessionStorage.setItem('currentPage', fullPath);
   });
 });
@@ -266,6 +267,10 @@ function mobileClickNav() {
     x.style.backgroundColor = "rgb(203,27,69)";
   }
 }
+$(window).on('load', function () {
+  $('.preloader').fadeOut("fast"); // Try faster fade-out
+  $('body').removeClass('preloader-site');
+});
 
 function hideiframeelement() {
   var iframe = document.getElementById("myiframe");
