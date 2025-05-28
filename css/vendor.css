@@ -499,16 +499,7 @@ body.chocolat-open>.chocolat-image-wrapper {
         padding-bottom: 10px;
         text-align: center;
     }
-    .about-section h2::after {
-        content: '';
-        position: absolute;
-        width: 10%;
-        height: 2px;
-        background-color: #333;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+    
     .about-section h3 {
         color: #000000;
         margin-bottom: 20px;
