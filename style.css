@@ -105,7 +105,7 @@ html {
 }
 
 body {
-  font-family: monospace;
+  font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
   font-size: 16px;
   font-weight: 0;
   line-height: 164%;
@@ -264,7 +264,7 @@ h4,
 h5,
 h6 {
   color: var(--primary-color);
-  font-family: monospace;
+  font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
   text-transform: capitalize;
   font-weight: 400;
 }
@@ -674,7 +674,7 @@ a.nav-link:hover {
 div.datetime-container,
 div.datetime-container * {
   box-sizing: border-box;
-  font-family: monospace;
+  font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
 }
 
 div.datetime-container button.date,
@@ -902,7 +902,7 @@ iconify-icon.quote {
 }
 
 .accordion-button {
-  font-family: monospace;
+  font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
   font-weight: var(--heading-font-weight);
   color: var(--heading-color);
   line-height: var(--heading-line-height);
