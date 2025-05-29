@@ -82,8 +82,8 @@ CSS STRUCTURE:
 
 /* Fonts */
 :root {
-  --heading-font: "Cormorant Upright", serif;
-  --body-font: "Sora", sans-serif;
+  --heading-font: Menlo, Monaco, 'Courier New', Courier, monospace !important;
+  --body-font: Menlo, Monaco, 'Courier New', Courier, monospace !important;
 }
 
 /*----------------------------------------------*/
