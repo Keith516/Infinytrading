@@ -11,7 +11,7 @@
 div.datetime-container,
 div.datetime-container * {
   box-sizing: border-box;
-  font-family: arial, sans-serif
+  font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
 }
 
 .fix-float:after {
@@ -494,7 +494,7 @@ body.chocolat-open>.chocolat-image-wrapper {
         color: #333;
        
         font-size: 2em;
-        font-family: 'Georgia', serif;
+        font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
         text-decoration: underline; 
         padding-bottom: 10px;
         text-align: center;
@@ -504,7 +504,7 @@ body.chocolat-open>.chocolat-image-wrapper {
         color: #000000;
         margin-bottom: 20px;
         font-size: 2em;
-        font-family: 'Courier New', monospace;
+        font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
         text-transform: uppercase;
         letter-spacing: 2px;
         text-align: center;
