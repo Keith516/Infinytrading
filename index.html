@@ -184,7 +184,7 @@
     <div class="loader"></div>
   </div>
 
-  <header id="header" style="position: fixed; top:0%; width:100%; z-index: 1000;">
+  <header id="header" style="position: fixed; top:0%; width:100%; z-index: 1000; margin-bottom:100px;">
     <div class="topnav">
       <a href="javascript:void(0);" class="icon" onclick="mobileClickNav()">
         <i class="fa fa-bars"></i>
@@ -192,8 +192,8 @@
       <div id="myLinks">
         <a href="./index.html" class="mobile-nav-item" data-i18n="home"></a>
         <a href="./about.html" class="mobile-nav-item" data-i18n="about"></a>
-      	<a href="./partner.html" class="mobile-nav-item" data-i18n="partner"></a>
-	<a href="./services.html" class="mobile-nav-item" data-i18n="services"></a>
+        <a href="./partner.html" class="mobile-nav-item" data-i18n="partner"></a>
+        <a href="./services.html" class="mobile-nav-item" data-i18n="services"></a>
         <a href="./core.html" class="mobile-nav-item" data-i18n="core"></a>
         <a href="./mission.html" class="mobile-nav-item" data-i18n="mission"></a>
         <a href="./contact.html" class="mobile-nav-item" data-i18n="contact"></a>
@@ -204,10 +204,12 @@
       <div class="d-flex justify-content-between align-items-center">
         <a href="./index.html" class="nav-link" style="display: flex; justify-content: center; align-items: center;">
           <img id="logo-infinytrading" class="logo" style="margin: 1vw;">
-        <div class="align-items-bottom" style="color: black; font-style: italic;align-self: end;">
-            <span class="member-tagline ">(Member of HKGCC) </span>
+          <div class="align-items-bottom" style="color: black; font-style: italic;align-self: end;">
+            <span style="color: black; font-style: italic;align-self: end;">(Member of HKGCC) </span>
           </div>
-	</a>
+         
+        </a>
+        
         <ul class="social-links d-flex flex-wrap list-unstyled m-0 p-4 ">
           <div class="first-row">
             <li><a href="index.html" onclick="changeLanguage('cn')" style="margin: 3px; margin-right: 5px; padding-right: 5px; color:#cb1b45ff;">繁</a></li>
@@ -242,33 +244,32 @@
     <nav class="desktop-nav" style="background-color: #cb1b45ff; padding: 1rem;">
       <ul class="nav-list" style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0;">
         <li class="nav-item" style="margin: 0 1rem;">
-          <a href="./index.html" class="nav-link" style="color: #ffffff; text-decoration: none; font-size: 1.2rem; font-weight: 0;" data-i18n="home"></a>
+          <a href="./index.html" class="nav-link" style="color: #ffffff; text-decoration: none; font-size: 1.2rem; font-family: monospace; font-weight: 0;" data-i18n="home"></a>
         </li>
         <li class="nav-item" style="margin: 0 1rem;">
-          <a href="./about.html" class="nav-link" style="color: #ffffff; text-decoration: none; font-size: 1.2rem;  font-weight: 0;" data-i18n="about"></a>
-        </li>
-	  <li class="nav-item" style="margin: 0 1rem;">
-          <a href="./partner.html" class="nav-link" style="color: #ffffff; text-decoration: none; font-size: 1.2rem;  font-weight: 0;" data-i18n="partner"></a>
-        </li>
-
-        <li class="nav-item" style="margin: 0 1rem;">
-          <a href="./services.html" class="nav-link" style="color: #ffffff; text-decoration: none; font-size: 1.2rem;  font-weight: 0;" data-i18n="services"></a>
+          <a href="./about.html" class="nav-link" style="color: #ffffff; text-decoration: none; font-size: 1.2rem; font-family: monospace; font-weight: 0;" data-i18n="about"></a>
         </li>
         <li class="nav-item" style="margin: 0 1rem;">
-          <a href="./core.html" class="nav-link" style="color: #ffffff; text-decoration: none; font-size: 1.2rem;  font-weight: 0;" data-i18n="core"></a>
+            <a href="./partner.html" class="nav-link" style="color: #ffffff; text-decoration: none; font-size: 1.2rem; font-family: monospace; font-weight: 0;" data-i18n="partner"></a>
+          </li>
+        <li class="nav-item" style="margin: 0 1rem;">
+          <a href="./services.html" class="nav-link" style="color: #ffffff; text-decoration: none; font-size: 1.2rem; font-family: monospace; font-weight: 0;" data-i18n="services"></a>
         </li>
         <li class="nav-item" style="margin: 0 1rem;">
-          <a href="./mission.html" class="nav-link" style="color: #ffffff; text-decoration: none; font-size: 1.2rem;  font-weight: 0;" data-i18n="mission"></a>
+          <a href="./core.html" class="nav-link" style="color: #ffffff; text-decoration: none; font-size: 1.2rem; font-family: monospace; font-weight: 0;" data-i18n="core"></a>
         </li>
         <li class="nav-item" style="margin: 0 1rem;">
-          <a href="./contact.html" class="nav-link" style="color: #ffffff; text-decoration: none; font-size: 1.2rem;  font-weight: 0;" data-i18n="contact"></a>
+          <a href="./mission.html" class="nav-link" style="color: #ffffff; text-decoration: none; font-size: 1.2rem; font-family: monospace; font-weight: 0;" data-i18n="mission"></a>
+        </li>
+        <li class="nav-item" style="margin: 0 1rem;">
+          <a href="./contact.html" class="nav-link" style="color: #ffffff; text-decoration: none; font-size: 1.2rem; font-family: monospace; font-weight: 0;" data-i18n="contact"></a>
         </li>
       </ul>
     </nav>
 
   </header>
-  <div style="background-color:#eae2e2; " >
-    <section id="gallery"  data-aos="fade-up" style=" width: 90%; margin: 0 auto;">
+  <div style="background-color:#eae2e2; " style="margin-top: 600px;">
+    <section id="gallery"  data-aos="fade-up" style=" width: 90%; margin:  auto;">
   <div class="video-wrapper"> <div class="video-container"> <iframe src="https://www.youtube.com/embed/S1pg9sL5Rp4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div> </div>
   </section>
   </div>
@@ -333,10 +334,10 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-8 mb-4">
+        <div class="col-md-6 col-lg-4 mb-4">
           <div class="blog-post position-relative overflow-hidden rounded-4">
             <img src="./photo/3.png" class="blog-img img-fluid rounded-4" alt="img">
-            <div class="position-absolute bottom-0 p-4">
+            <div class="position-absolute bottom-0 p-5">
               <a href="#"><span class="bg-secondary text-body m-0 px-2 py-1 rounded-2 fs-6"
                   data-i18n="services_item41"></span></a>
 

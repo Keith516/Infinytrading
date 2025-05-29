@@ -856,7 +856,7 @@ body.chocolat-open>.chocolat-image-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 100%;
     
   }
 
