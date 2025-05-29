@@ -135,6 +135,7 @@ a {
   color: inherit;
   text-decoration: none;
   transition: 0.3s ease-in-out;
+  font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
 }
 
 /* a:hover {
@@ -625,16 +626,19 @@ svg.social:hover {
 a.nav-link {
   text-transform: capitalize;
   color: var(--primary-color-200);
+  font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
 }
 
 a.nav-link:focus {
   color: var(--primary-color-200);
+  font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
 }
 
 a.nav-link.active,
 a.nav-link:hover {
   color: var(--primary-color) !important;
   outline: none;
+  font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
 }
 
 #primary-header .dropdown .search::after {
@@ -660,11 +664,13 @@ a.nav-link:hover {
   a.nav-link {
     font-size: 18px;
     /* padding: 15px 0 15px 0 !important; */
+    font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
   }
 }
 @media (max-width: 768px) {
   a.nav-link {
     font-size: 14px;
+    font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
   }
 }
 
