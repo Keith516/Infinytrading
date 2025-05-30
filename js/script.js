@@ -226,7 +226,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   const currentPath = sessionStorage.getItem('currentPage');
   if (currentPath && window.location.href !== currentPath) {
     
-     window.location.href = currentPath || "http://127.0.0.1:5500/Infinytrading/index.html";
+     window.location.href = currentPath || "http://127.0.0.1:5500/index.html";
   }
 });
 
@@ -238,7 +238,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
     // Remove leading './' from href if present
     const sanitizedHref = href.replace(/^\.\//, '');
-    const fullPath = "http://127.0.0.1:5500/Infinytrading/" + sanitizedHref;
+    const fullPath = "http://127.0.0.1:5500/" + sanitizedHref;
     sessionStorage.setItem('currentPage', fullPath);
   });
 });
@@ -249,7 +249,7 @@ document.querySelectorAll('.mobile-nav-item').forEach(link => {
 
     // Remove leading './' from href if present
     const sanitizedHref = href.replace(/^\.\//, '');
-    const fullPath = "http://127.0.0.1:5500/Infinytrading/" + sanitizedHref;
+    const fullPath = "http://127.0.0.1:5500/" + sanitizedHref;
     sessionStorage.setItem('currentPage', fullPath);
   });
 });
