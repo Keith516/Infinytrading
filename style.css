@@ -98,16 +98,16 @@ CSS STRUCTURE:
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'Source Han Mono TC Light' !important;
+  font-family: Arial, sans-serif  !important;
 }
 
 html {
   box-sizing: border-box;
-  font-family: 'Source Han Mono TC Light' !important;
+  font-family: Arial, sans-serif  !important;
 }
 
 body {
-  font-family: 'Source Han Mono TC Light' !important;
+  font-family: Arial, sans-serif  !important;
   font-size: 16px;
   font-weight: 100;
   line-height: 164%;
@@ -135,7 +135,7 @@ a {
   color: inherit;
   text-decoration: none;
   transition: 0.3s ease-in-out;
-  font-family: 'Source Han Mono TC Light' !important;
+  font-family: Arial, sans-serif  !important;
 }
 
 /* a:hover {
@@ -267,7 +267,7 @@ h4,
 h5,
 h6 {
   color: var(--primary-color);
-  font-family: 'Source Han Mono TC Light' !important;
+  font-family: Arial, sans-serif  !important;
   text-transform: capitalize;
   font-weight: 400;
 }
@@ -626,19 +626,19 @@ svg.social:hover {
 a.nav-link {
   text-transform: capitalize;
   color: var(--primary-color-200);
-  font-family: 'Source Han Mono TC Light' !important;
+  font-family: Arial, sans-serif  !important;
 }
 
 a.nav-link:focus {
   color: var(--primary-color-200);
-  font-family: 'Source Han Mono TC Light' !important;
+  font-family: Arial, sans-serif  !important;
 }
 
 a.nav-link.active,
 a.nav-link:hover {
   color: var(--primary-color) !important;
   outline: none;
-  font-family: 'Source Han Mono TC Light' !important;
+  font-family: Arial, sans-serif  !important;
 }
 
 #primary-header .dropdown .search::after {
@@ -664,13 +664,13 @@ a.nav-link:hover {
   a.nav-link {
     font-size: 18px;
     /* padding: 15px 0 15px 0 !important; */
-    font-family: 'Source Han Mono TC Light' !important;
+    font-family: Arial, sans-serif  !important;
   }
 }
 @media (max-width: 768px) {
   a.nav-link {
     font-size: 14px;
-    font-family: 'Source Han Mono TC Light' !important;
+    font-family: Arial, sans-serif  !important;
   }
 }
 
@@ -682,7 +682,7 @@ a.nav-link:hover {
 div.datetime-container,
 div.datetime-container * {
   box-sizing: border-box;
-  font-family: 'Source Han Mono TC Light' !important;
+  font-family: Arial, sans-serif  !important;
 }
 
 div.datetime-container button.date,
@@ -910,7 +910,7 @@ iconify-icon.quote {
 }
 
 .accordion-button {
-  font-family: 'Source Han Mono TC Light' !important;
+  font-family: Arial, sans-serif  !important;
   font-weight: var(--heading-font-weight);
   color: var(--heading-color);
   line-height: var(--heading-line-height);
