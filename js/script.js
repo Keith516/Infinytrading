@@ -287,6 +287,3 @@ function hideiframeelement() {
 document.getElementById("myiframe").addEventListener("load", function () {
   hideiframeelement();
 });
-
-
-
