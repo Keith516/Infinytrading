@@ -11,7 +11,7 @@
 div.datetime-container,
 div.datetime-container * {
   box-sizing: border-box;
-  font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
+  font-family: 'Source Han Mono TC Light' !important;
 }
 
 .fix-float:after {
@@ -458,19 +458,19 @@ body.chocolat-open>.chocolat-image-wrapper {
 .about-section {
             padding: 20px;
             background-color: #f4f4f4;
-            font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
+            font-family: 'Source Han Mono TC Light' !important;
         }
         .about-section h2 {
             text-align: center;
             color: #333;
-            font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
+            font-family: 'Source Han Mono TC Light' !important;
         }
         .about-section p {
             max-width: 800px;
             margin: 0 auto;
             line-height: 1.6;
             color: #666;
-            font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
+            font-family: 'Source Han Mono TC Light' !important;
         }
         @media (max-width: 600px) {
             .about-section {
@@ -489,7 +489,7 @@ body.chocolat-open>.chocolat-image-wrapper {
           margin-top: 200px;
           border-radius: 8px;
           transition: box-shadow 0.3s ease;
-          font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
+          font-family: 'Source Han Mono TC Light' !important;
       }
       .about-section:hover {
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -498,7 +498,7 @@ body.chocolat-open>.chocolat-image-wrapper {
         color: #333;
        
         font-size: 2em;
-        font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
+        font-family: 'Source Han Mono TC Light' !important;
         text-decoration: underline; 
         padding-bottom: 10px;
         text-align: center;
@@ -508,7 +508,7 @@ body.chocolat-open>.chocolat-image-wrapper {
         color: #000000;
         margin-bottom: 20px;
         font-size: 2em;
-        font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
+        font-family: 'Source Han Mono TC Light' !important;
         text-transform: uppercase;
         letter-spacing: 2px;
         text-align: center;
@@ -522,7 +522,7 @@ body.chocolat-open>.chocolat-image-wrapper {
         font-size: 1.1em;
         text-align: justify;
         padding-bottom: 30px;
-        font-family: Menlo, Monaco, 'Courier New', Courier, monospace !important;
+        font-family: 'Source Han Mono TC Light' !important;
     }
     @media (max-width: 768px) {
         .about-section {
